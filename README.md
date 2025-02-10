@@ -14,15 +14,15 @@ cli/srv 형태로, 간단히 두 개의 터미널만 띄우고 server와 client�
    
    ![image](https://github.com/user-attachments/assets/b0b78d97-066f-4ba9-8bd5-51615bb56e04)
 
-3. 문서에 대한 쿼리를 날림
+2. 문서에 대한 쿼리를 날림
    
 ![image](https://github.com/user-attachments/assets/d370c545-9dd5-4d2d-9ecc-93052c381ebd)
 
-5. 서버에 위치한 Vector DB에서 유사도 검색 후 context를 llm에 전달
+3. 서버에 위치한 Vector DB에서 유사도 검색 후 context를 llm에 전달
    
 ![image](https://github.com/user-attachments/assets/28e34e5e-426e-4de2-b7c0-4f0bc476ceb3)
 
-7. context를 바탕으로 llm이 답변 출력
+4. context를 바탕으로 llm이 답변 출력
    
 ![image](https://github.com/user-attachments/assets/4440960d-925e-49a7-8426-793290ab8428)
 
