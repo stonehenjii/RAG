@@ -1,0 +1,28 @@
+Ubuntu Linux 이용 
+
+터미널 1. 
+$ mkdir flask #프로젝트 실행할 디렉토리 생성
+
+$ python3 -m venv venv  #디렉토리 내 가상환경 생성
+
+$ source venv/bin/activate #가상환경 활성화 
+  
+$ gedit app.py & #gedit으로 백그라운드 python 작업, nano 써도 상관없음 
+
+$ python app.py #app.py 실행 (flask 서버)
+
+
+
+  
+터미널 2. 
+  # pdf 파일 업로드시
+$ curl -X POST -F "file=@/home/path/your/upload/file" http://localhost:8080/upload_pdf
+  # pdf 바탕으로 질문하기 
+$ curl -X POST http://localhost:8080/ask_pdf -H "Content-Type: application/json" -d '{"query": "input_your_query"}
+  # ai 에게 질문하기 
+$ curl -X POST http://localhost:8080/ai -H "Content-Type: application/json" -d '{"query": "input_your_query"}
+
+
+터미널 3. 
+  # GPU사용 실시간 점검 
+$ watch -n -1 nvidia-smi
