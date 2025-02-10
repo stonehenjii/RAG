@@ -2,11 +2,18 @@
 RAG구축 프로젝트_한국어
 
 기업에서는 보안 문제로 인해 클라우드 사용 등 외부망으로 이어지는 LLM 및 DB사용에 어려움을 겪고 있다. 
+
 이에, 본 프로젝트는 온디바이스 RAG 체제를 구축하여 LLM을 사용할 수 있게 함에 목적을 둔다. 
 
+
+
 nlpai-lab-KoE5 한국어 파인튜닝 모델인 E5모델을 활용해 RAG를 구축한다. 
-PDF 파일을 Chroma DB에 벡터화해 적재하고, 문서에 대한 QA시스템을 지원한다. 
+https://huggingface.co/nlpai-lab/KoE5
+
+PDF 파일을 Chroma DB에 벡터화해 적재하고, 문서에 대한 QA시스템을 지원한다.
+
 Ollama(llama3)모델을 llm으로 사용한다. 
+
 
 cli/srv 형태로, 간단히 두 개의 터미널만 띄우고 server와 client가 QA를 이어갈 수 있게끔 한다. 
 
